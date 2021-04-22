@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/fonts/ionicons.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/styles.min.css') }}">
+
+</head>
+
+<body>
+    <section class="bg-white"></section>
+    <nav class="navbar navbar-dark navbar-expand-md" id="app-navbar" style="background: linear-gradient(120deg, #000000, #15a9ff);">
+        <div class="container-fluid">
+            <h3 style="color: #ffffff;"> Face Mask Detector using RaspberryPi 4</h3>
+            <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><button class="btn btn" " disabled><b class="nav-link" style="color: black;">Select To Refresh:</b></button></li>
+                    
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="{{ url_for('face_mask') }}"><button class="btn btn-outline-success" style="color:#ffffff; border-color: #000000;">Refresh</button></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="bg-white" style="background: linear-gradient(120deg, #01475c, #ffffff);">
+        <div class="container-fluid">
+            <div class="row">
+                {% block video %}{% endblock %}
+                <div class="col-md-12 col-lg-3 offset-lg-0" style="background: linear-gradient(120deg, #0096fa, #ffffff)">
+                    <h1  style="padding-top: 20px;padding-left: 15px;padding-right: 15px;">Mask Detector</h1>
+                    <hr>
+
+                    <div><h2>K J Somaiya College Of Engineering</h2></div>
+                    <p class="text-black-50" 15px;padding-right: 15px;>
+                        Face Mask Detector using Raspberry Pi 4
+                        The program uses a trained model for Face Mask detection.
+                        <ul>
+                        <li>CNN trained on 7500 images</li>
+                        <li>2 Hidden Layers</li>
+                        <li>2 Output layers</li>
+                        </ul>
+                        <br><br><br><br><br><br><br>
+                    </p>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section>
+    <div class="footer-basic" style="background: linear-gradient(120deg, #15a9ff,#000000); padding-left: 10px; padding-top: 20px;">
+        <footer style="color: white; padding-left: 10px;">
+            <h2>Authors</h2>
+                <ol>
+                    <li> 1812077 Shravani Dhote</li>
+                    <li> 1812078 Meet Doshi</li>
+                </ol>
+        </footer>
+    </div>
+    <script src="{{ url_for('static', filename='/assets/js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='/assets/bootstrap/js/bootstrap.min.js') }}"></script>
+</body>
+
+</html>
