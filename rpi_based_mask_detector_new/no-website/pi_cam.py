@@ -104,7 +104,7 @@ class VideoCamera(object):
         ret, jpeg = cv2.imencode('.jpg', frame)
         return frame
 PiCam = VideoCamera()
-def rescaleFrame(frame, scale=4):
+def rescaleFrame(frame, scale=2.5):
     # Images, Videos and Live Video
     width = int(frame.shape[1] * scale)
     height = int(frame.shape[0] * scale)
