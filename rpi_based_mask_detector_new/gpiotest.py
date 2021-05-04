@@ -18,15 +18,19 @@ dutycycle = 0
 for dutycycle in range(0,26,1):
     #wiringpi.pwmWrite(26,dutycycle)
     wiringpi.softPwmWrite(26,dutycycle)
-    time.sleep(0.5)
+    time.sleep(2)
     print(dutycycle)
 
 for dutycycle in range(26,-1,-1):
     #wiringpi.pwmWrite(26,dutycycle)
     wiringpi.softPwmWrite(26,dutycycle)
-    time.sleep(0.5)
+    time.sleep(2)
     print(dutycycle)
 print("GGWP")
 """"""
 #time.sleep(100)
+
+GPIO.output(15 , 0)
+GPIO.output(13 , 0)
+GPIO.output(11 , 0)
 GPIO.cleanup()
