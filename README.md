@@ -10,15 +10,15 @@
 ## WebPage and Hardware
 
 ### Live feed Webpage
-<img src="https://user-images.githubusercontent.com/57676220/132985159-4fe82376-fe11-4006-a6c7-b44e74831445.png" width=400> 
+<img src="https://user-images.githubusercontent.com/57676220/132985159-4fe82376-fe11-4006-a6c7-b44e74831445.png" width=500> 
 
 
 ### Project Flowchart
 
-<img src="https://user-images.githubusercontent.com/57676220/132984460-17296834-e5bb-4628-ace2-82ff80c52d97.png" width=500> 
+<img src="https://user-images.githubusercontent.com/57676220/132984460-17296834-e5bb-4628-ace2-82ff80c52d97.png" width=550> 
 
 ### Neural Network Architecture
-<img src = "https://user-images.githubusercontent.com/57676220/132985181-5b9d6250-68dd-43e3-9a32-cc819a3a3a23.png" width=400> 
+<img src = "https://user-images.githubusercontent.com/57676220/132985181-5b9d6250-68dd-43e3-9a32-cc819a3a3a23.png" width=500> 
 
 <!-- GETTING STARTED -->
 ## Getting Started
