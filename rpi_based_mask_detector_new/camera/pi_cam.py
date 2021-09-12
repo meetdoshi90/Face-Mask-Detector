@@ -83,13 +83,15 @@ class VideoCamera(object):
         result = 1 - result
         label = np.argmax(result, axis=1)[0]
         if label==0:
-            cv2.putText(frame, label_dict[label], (75,150), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (250, 240, 255), 2)
+            cv2.putText(frame, label_dict[label], (75,150),
+            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (250, 240, 255), 2)
             GPIO.output(15,1)
             print(label_dict[label])
             time.sleep(0.1)
             GPIO.output(15,0)
         elif label==1:
-            cv2.putText(frame, label_dict[label], (75,150), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (250, 240, 255), 2)
+            cv2.putText(frame, label_dict[label], (75,150),
+            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (250, 240, 255), 2)
             GPIO.output(13,1)
             print(label_dict[label])
             time.sleep(0.1)

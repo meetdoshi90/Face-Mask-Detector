@@ -73,7 +73,6 @@ class VideoCamera(object):
         input_details = model.input_details()
         output_details = model.output_details()
         input_shape = input_details[0]['shape']
-
         label_dict = {0: 'MASK', 1: "NO MASK"}
         eye_img = gray
         resized = cv2.resize(eye_img, (100,100))
