@@ -119,8 +119,8 @@ This is an example of how to list things you need to use the software and how to
 
 👤 **Meet Doshi**
 
-- GitHub: [@githubhandle](https://github.com/meetdoshi90)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/meetdoshi90)
+- GitHub: [@meetdoshi90](https://github.com/meetdoshi90)
+- LinkedIn: [@meetdoshi90](https://linkedin.com/in/meetdoshi90)
 
 👤 **Shravani Dhote**
 
